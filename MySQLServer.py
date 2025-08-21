@@ -1,4 +1,4 @@
-import from mysql.connector
+import mysql.connector
 
 sql = "CREATE DATABASE IF NOT EXISTS alx_book_store;"
 
