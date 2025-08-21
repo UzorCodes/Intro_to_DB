@@ -29,7 +29,7 @@ CREATE TABKE Orders(
 order_id INT PRIMARY KEY,
 customer_id INT,
 order_date DATE,
-FOREIGN KEY customer_id REFERENCES customers(customer_id)
+FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
 );
 
 
@@ -38,7 +38,7 @@ orderdetailid INT PRIMARY KEY,
 order_ID INT,
 book_id INT,
 quantity DOUBLE,
-FOREIGN KEY Order_id REFERENCES orders(order_id),
-FOREIGN KEY book_id REFERENCES books(book_id)
+FOREIGN KEY (Order_id) REFERENCES Orders(order_id),
+FOREIGN KEY (book_id) REFERENCES Books(book_id)
 );
 
